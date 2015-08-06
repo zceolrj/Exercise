@@ -1,0 +1,30 @@
+@CHARSET "UTF-8";
+
+body,button, input, select, textarea,h1 ,h2, h3, h4, h5, h6 { 
+	font-family: Microsoft YaHei,'宋体' , Tahoma, Helvetica, Arial, "\5b8b\4f53", sans-serif;
+}
+
+#lfdjjgBody{
+	width:954px;
+	margin: 0 auto;
+}
+
+#greenTick{
+	float:left;
+	width:350px;
+	height:330px;
+	text-align:right;
+	padding-top:100px;
+	padding-bottom:100px;
+	padding-right:10px;
+}
+
+#lfdjjgContent{
+	float:left;
+	width:604px;
+	height:330px;
+	text-align:left;
+	padding-top:120px;
+	padding-bottom:100px;
+	padding-left:10px;
+}

@@ -1,0 +1,185 @@
+@CHARSET "UTF-8";
+
+body,button, input, select, textarea,h1 ,h2, h3, h4, h5, h6 { 
+	font-family: Microsoft YaHei,'宋体' , Tahoma, Helvetica, Arial, "\5b8b\4f53", sans-serif;
+}
+
+#preapply_navigation {
+	width:954px;
+	height:33px;
+	padding-left:10px;
+	margin: 0 auto;
+	background-image:url(../images/navigation.jpg); 
+}
+
+#navigationImg{
+	float:left;
+	padding-top:3px;
+}
+
+#navigationContent{
+	padding-top: 4px;
+	padding-bottom: 4px;
+	padding-left:5px;
+	float:left;
+}
+
+#preapply_body {
+	width: 954px;
+	margin: 0 auto;
+}
+
+.btn-yg{
+	
+}
+
+#deleteFileBtn{
+	color: #ffffff;
+	background-color: #FF9900;
+	border-color: #FF9900;
+}
+
+#zrr {
+	background-color: #cdbfe3;
+	width: 850px;
+	height: 620px;
+	z-index: 1;
+	border: 2px solid lightblue;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+}
+
+#fr {
+	background-color: #cdbfe3;
+	width: 850px;
+	height: 600px;
+	z-index: 1;
+	border: 2px solid lightblue;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+}
+
+#ffrqtzz {
+	background-color: #cdbfe3;
+	width: 850px;
+	height: 600px;
+	z-index: 1;
+	border: 2px solid lightblue;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+}
+
+#closeZrr{
+	text-align: right;
+	padding-top: 5px;
+	padding-right: 8px;
+}
+
+#zrrSpan{
+	cursor: pointer;
+}
+
+#zrrTitle{
+	/* background-color: gray; */
+	padding-top: 5px;
+	padding-left: 20px;
+	padding-bottom: 20px;
+}
+
+#zrrSubmit{
+	
+}
+
+#closeFr{
+	text-align:right;
+	padding-top:5px;
+	padding-right:8px;
+}
+
+#frTitle{
+	padding-top:5px;
+	padding-left:20px;
+	padding-bottom:20px;
+}
+
+#closeFfrqtzz{
+	text-align:right;
+	padding-top:5px;
+	padding-right:8px;
+}
+
+#ffrqtzzTitle{
+	padding-top:5px;
+	padding-left:20px;
+	padding-bottom:20px;
+}
+
+#finalSubmitDiv{
+	text-align: center;
+}
+
+#finalSubmit{
+	color: #ffffff;
+    background-color: #FF9900;
+    border-color: #FF9900;
+}
+
+.activeInfo{
+	background-color:lightblue;
+	color:green;
+	padding-left:5px;
+	padding-top:5px;
+	padding-right:10px;
+	border: 2px solid lightblue;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+}
+
+.activeDelete{
+	float:right;
+}
+
+.validateTop{
+	padding-top: 7px;
+}
+
+.col-self-1,.col-self-2,.col-self-3,.col-self-4,.col-self-5,.col-self-6,.col-self-7,.col-self-8
+	{
+	position: relative;
+	float: left;
+	min-height: 1px;
+	padding-right: 5px;
+	padding-left: 5px;
+}
+
+.col-self-3 {
+	width: 25%;
+}
+
+.col-self-2 {
+	width: 16.666666666666664%;
+}
+
+.col-self-1 {
+	width: 8.333333333333332%;
+}
+
+.col-self-8 {
+	width: 66.66666666666666%;
+}
+
+.col-self-7 {
+	width: 58.333333333333336%;
+}
+
+.col-self-6 {
+	width: 50%;
+}
+
+.col-self-5 {
+	width: 41.66666666666667%;
+}
+
+.col-self-4 {
+	width: 33.33333333333333%;
+}

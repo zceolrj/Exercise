@@ -1,0 +1,118 @@
+@CHARSET "UTF-8";
+
+body,button,input,select,textarea,h1,h2,h3,h4,h5,h6 {
+	font-family: Microsoft YaHei, '宋体', Tahoma, Helvetica, Arial,
+		"\5b8b\4f53", sans-serif;
+}
+
+#noticeNavigation {
+	width: 954px;
+	height: 33px;
+	padding-left: 10px;
+	margin: 0 auto;
+	background-image:url(../images/navigation.jpg); 
+}
+
+#navigationImg{
+	float:left;
+}
+
+#navigationContent{
+	padding-top: 4px;
+	padding-bottom: 4px;
+	padding-left:5px;
+	float:left;
+}
+
+#laNotesGap{
+	width:954px;
+	height:10px;
+	margin:0 auto;
+}
+
+#laNotesBody{
+	width:954px;
+	height:330px;
+	overflow:hidden;
+	position:relative;
+	margin:0 auto;
+	background-color:#AAAAAA;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+}
+
+#laNotesBody .box{
+	width:854px;
+	height:340px;
+	box-shadow:0px 0px 5px #ddd;
+	margin:0px auto;
+	overflow:hidden;
+	position:relative;
+	/*added*/
+	padding-left:15px;
+	padding-right:10px;
+	background-color:#CCDDFF;
+}
+
+#laNotesBody .box img{
+	width:854px;
+	height:340px;
+	position:absolute;
+	left:0px;
+	top:0px;
+	opacity:0;
+	filter:alpha(opacity=0);
+}
+
+#laNotesBody .btnLeft{
+	width:35px;
+	height:57px;
+	position:absolute;
+	left:5px;
+	top:125px;
+	background:url(../images/left_ar.png) no-repeat 0px 0px;
+}
+
+#laNotesBody .btnRight{
+	width:35px;
+	height:57px;
+	position:absolute;
+	right:5px;
+	top:125px;
+	background:url(../images/right_ar.png) no-repeat 0px 0px;
+}
+
+#laNotesBody .page{
+	width:132px;
+	height:22px;
+	position:absolute;
+	bottom:15px;
+	right:50px;
+}
+
+#laNotesBody .page a{
+	display:inline-block;
+	width:22px;
+	height:22px;
+	background:url(../images/num_grey.png) no-repeat 0px 0px;
+	margin:0px 11px;
+	float:left;
+	color:#FFF;
+	text-decoration:none;
+	text-align:center;
+}
+
+#laNotesBody  .page a.active{
+	background:url(../images/num_red.png) no-repeat 0px 0px;
+}
+
+
+#laNotes_button {
+	text-align: center;
+}
+
+#confirm {
+	color: #ffffff;
+	background-color: #FF9900;
+	border-color: #FF9900;
+}

@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2014-7-21 0:36:58 by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="nju.software.xfgl.model.LaLasq" table="la_lasq" catalog="spgk">
+        <id name="lasqbh" type="int">
+            <column name="LASQBH" />
+            <generator class="assigned" />
+        </id>
+        <property name="zrrbh" type="string">
+            <column name="ZRRBH" />
+        </property>
+        <property name="frbh" type="string">
+            <column name="FRBH" />
+        </property>
+        <property name="xzjgbh" type="string">
+            <column name="XZJGBH" />
+        </property>
+        <property name="lasqrq" type="timestamp">
+            <column name="LASQRQ" length="19" />
+        </property>
+        <property name="cl" type="string">
+            <column name="CL" />
+        </property>
+        <property name="aqsm" type="string">
+            <column name="AQSM" length="65535" not-null="true" />
+        </property>
+        <property name="cxbh" type="string">
+            <column name="CXBH" not-null="true" />
+        </property>
+        <property name="lacxmm" type="string">
+            <column name="LACXMM" not-null="true" />
+        </property>
+        <property name="dzyj" type="string">
+            <column name="DZYJ" />
+        </property>
+        <property name="lxdh" type="string">
+            <column name="LXDH" />
+        </property>
+        <property name="symbol" type="int">
+            <column name="SYMBOL" not-null="true" />
+        </property>
+    </class>
+</hibernate-mapping>

@@ -1,0 +1,63 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd" >
+    
+<hibernate-mapping>
+<!-- 
+    Created by the Middlegen Hibernate plugin 2.2
+
+    http://boss.bekk.no/boss/middlegen/
+    http://www.hibernate.org/
+-->
+
+<class 
+    name="nju.software.xfgl.model.PubDmb" 
+    table="pub_dmb"
+    lazy="false"
+>
+
+    <composite-id>
+        <key-property 
+            name="lbbh"
+            type="java.lang.String"
+            column="LBBH" 
+        />
+        <key-property 
+            name="dmbh"
+            type="java.lang.String"
+            column="DMBH"
+        />
+    </composite-id>
+
+    <property
+        name="dmms"
+        type="java.lang.String"
+        column="DMMS"
+    />
+    <property
+        name="xgdm"
+        type="java.lang.String"
+        column="XGDM"
+    />
+    <property
+        name="bz"
+        type="java.lang.String"
+        column="BZ"
+    />
+    <property
+        name="modflag"
+        type="java.lang.String"
+        column="MODFLAG"
+    />
+    <property
+        name="transflag"
+        type="java.lang.String"
+        column="TRANSFLAG"
+    />
+
+    <!-- Associations -->
+  
+
+</class>
+</hibernate-mapping>

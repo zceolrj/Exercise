@@ -1,0 +1,50 @@
+@CHARSET "UTF-8";
+
+body,button, input, select, textarea,h1 ,h2, h3, h4, h5, h6 { 
+	font-family: Microsoft YaHei,'宋体' , Tahoma, Helvetica, Arial, "\5b8b\4f53", sans-serif;
+}
+
+#lasuccessNavigation{
+	width:954px;
+	height:33px;
+	padding-left:10px;
+	margin: 0 auto;
+	background-image:url(../images/navigation.jpg); 
+}
+
+#navigationImg{
+	float:left;
+	padding-top:4px;
+}
+
+#navigationContent{
+	padding-top: 4px;
+	padding-bottom: 4px;
+	padding-left:5px;
+	float:left;
+}
+
+#lasuccessBody{
+	width:954px;
+	margin: 0 auto;
+}
+
+#greenTick{
+	float:left;
+	width:350px;
+	height:360px;
+	text-align:right;
+	padding-top:110px;
+	padding-bottom:100px;
+	padding-right:10px;
+}
+
+#lasuccessContent{
+	float:left;
+	width:604px;
+	height:360px;
+	text-align:left;
+	padding-top:130px;
+	padding-bottom:100px;
+	padding-left:10px;
+}

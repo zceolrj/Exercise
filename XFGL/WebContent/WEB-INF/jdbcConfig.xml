@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xmlns:aop="http://www.springframework.org/schema/aop"
+	xmlns:tx="http://www.springframework.org/schema/tx"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation=" 
+          http://www.springframework.org/schema/beans 
+          http://www.springframework.org/schema/beans/spring-beans-3.0.xsd 
+          http://www.springframework.org/schema/tx 
+          http://www.springframework.org/schema/tx/spring-tx-3.0.xsd
+          http://www.springframework.org/schema/context 
+          http://www.springframework.org/schema/context/spring-context-3.0.xsd 
+          http://www.springframework.org/schema/aop 
+          http://www.springframework.org/schema/aop/spring-aop-3.0.xsd" default-autowire="byName">
+    
+    <!-- 处理CLOB和BLOB类型的对象 -->
+    <bean id="lobHandler" class="org.springframework.jdbc.support.lob.DefaultLobHandler" lazy-init="true" />
+    
+	<bean id="dataSource" class="org.springframework.jdbc.datasource.DriverManagerDataSource">
+        <property name="driverClassName" value="com.mysql.jdbc.Driver"></property>
+        <property name="url" value="jdbc:mysql://127.0.0.1:3306/spgk"></property>
+        <property name="username" value="root"></property>
+        <property name="password" value=""></property>
+    </bean>
+    
+    <!-- 配置hibernate,定义Hibernate的sessionFactory -->
+    <bean id="sessionFactory" class="org.springframework.orm.hibernate3.LocalSessionFactoryBean">
+		<property name="dataSource" ref="dataSource"/>
+        <property name="mappingResources">
+          <list>
+            <value>nju/software/xfgl/model/XfglLfdj.hbm.xml</value>
+            <value>nju/software/xfgl/model/DsrJb.hbm.xml</value>
+            <value>nju/software/xfgl/model/DsrGr.hbm.xml</value>
+            <value>nju/software/xfgl/model/DsrDw.hbm.xml</value>
+            <value>nju/software/xfgl/model/DsrXpJg.hbm.xml</value>
+            <value>nju/software/xfgl/model/PubDmb.hbm.xml</value>
+            <value>nju/software/xfgl/model/LaLasq.hbm.xml</value>
+          </list>
+        </property>
+        <!-- 设置Hibernate的属性 -->
+		<property name="hibernateProperties">
+			<props>
+				<!-- 设置是否在控制台输出由Hibernate生成的SQL语句 -->
+				<prop key="hibernate.dialect">org.hibernate.dialect.MySQLDialect</prop>
+				<prop key="hibernate.show_sql">true</prop>
+			</props>
+		</property>
+	</bean>
+	
+	<!-- 配置事务管理 -->
+	<bean id="transactionManager" class="org.springframework.orm.hibernate3.HibernateTransactionManager">
+	    <property name="sessionFactory" ref="sessionFactory" />
+	</bean>
+	<bean id="TxService" class="org.springframework.transaction.interceptor.TransactionProxyFactoryBean" abstract="true">
+	    <property name="transactionManager" ref="transactionManager" />
+	    <property name="proxyTargetClass" value="true" />
+	    <property name="transactionAttributes">
+	        <props>
+	            <prop key="get*">PROPAGATION_REQUIRED,readOnly</prop>
+	            <prop key="find*">PROPAGATION_REQUIRED,readOnly</prop>
+	            <prop key="load*">PROPAGATION_REQUIRED,readOnly</prop>
+	            <prop key="save*">PROPAGATION_REQUIRED</prop>
+	            <prop key="update*">PROPAGATION_REQUIRED</prop>
+	            <prop key="remove*">PROPAGATION_REQUIRED</prop>
+	        </props>
+	    </property>
+	</bean>
+	
+	<!-- 配置dao -->
+	<bean id="xfgl_daoTarget" class="nju.software.xfgl.dao.impl.XFGLDaoImpl">
+	    <property name="sessionFactory">
+	        <ref local="sessionFactory" />
+	    </property>
+	</bean>
+	
+	<bean id="xfglDao" parent="TxService">
+	    <property name="target">
+	        <ref local="xfgl_daoTarget" />
+	    </property>
+	</bean>
+	
+	<!-- 配置service -->
+	<bean id="xfglService" class="nju.software.xfgl.service.impl.XFGLServiceImpl">
+	    <property name="xfglDao" ref="xfglDao" />
+	</bean>
+	
+</beans>

@@ -1,0 +1,73 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2014-7-21 0:36:58 by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="nju.software.xfgl.model.DsrXpJg" table="dsr_xp_jg" catalog="spgk">
+        <composite-id>
+            <key-property name="ajxh" type="int">
+                <column name="AJXH" />
+            </key-property>
+            <key-property name="dsrbh" type="int">
+                <column name="DSRBH" />
+            </key-property>
+        </composite-id>
+        <property name="jgmc" type="string">
+            <column name="JGMC" length="50" />
+        </property>
+        <property name="xzjgxz" type="string">
+            <column name="XZJGXZ" length="10" />
+        </property>
+        <property name="sffy" type="string">
+            <column name="SFFY" length="1" />
+        </property>
+        <property name="sfpc" type="string">
+            <column name="SFPC" length="1" />
+        </property>
+        <property name="dh" type="string">
+            <column name="DH" length="20" />
+        </property>
+        <property name="dz" type="string">
+            <column name="DZ" length="50" />
+        </property>
+        <property name="yb" type="string">
+            <column name="YB" length="10" />
+        </property>
+        <property name="fddbrxm" type="string">
+            <column name="FDDBRXM" length="50" />
+        </property>
+        <property name="djzlb" type="string">
+            <column name="DJZLB" length="10" />
+        </property>
+        <property name="djzh" type="string">
+            <column name="DJZH" length="10" />
+        </property>
+        <property name="djzlbA" type="string">
+            <column name="DJZLB_A" length="2" />
+        </property>
+        <property name="djzhA" type="string">
+            <column name="DJZH_A" length="50" />
+        </property>
+        <property name="djzlbB" type="string">
+            <column name="DJZLB_B" length="2" />
+        </property>
+        <property name="djzhB" type="string">
+            <column name="DJZH_B" length="50" />
+        </property>
+        <property name="djzlbC" type="string">
+            <column name="DJZLB_C" length="2" />
+        </property>
+        <property name="djzhC" type="string">
+            <column name="DJZH_C" length="50" />
+        </property>
+        <property name="djzlbE" type="string">
+            <column name="DJZLB_E" length="2" />
+        </property>
+        <property name="djzhE" type="string">
+            <column name="DJZH_E" length="50" />
+        </property>
+        <property name="symbol" type="int">
+            <column name="SYMBOL" not-null="true" />
+        </property>
+    </class>
+</hibernate-mapping>

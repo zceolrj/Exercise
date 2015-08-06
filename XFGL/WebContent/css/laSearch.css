@@ -1,0 +1,33 @@
+@CHARSET "UTF-8";
+
+body,button,input,select,textarea,h1,h2,h3,h4,h5,h6 {
+	font-family: Microsoft YaHei, '宋体', Tahoma, Helvetica, Arial,
+		"\5b8b\4f53", sans-serif;
+}
+
+.validateTop{
+	text-align: left;
+	padding-top: 7px;
+}
+
+.yzmPicContent{
+	padding-top:3px;
+}
+
+#ylacxButton{
+	padding-top: 20px;
+}
+
+#ylacxSubmit{
+	color: #ffffff;
+	background-color: #FF9900;
+	border-color: #FF9900;
+}
+
+#validateDiv{
+	height:10px;
+}
+
+#validateAll{
+	text-align:left;
+}

@@ -1,0 +1,9 @@
+/**
+ * 
+ */
+$(document).ready(function(){
+	$("#laConfirm").click(function()
+	{
+		window.location.href="../la/notice";
+	});
+});

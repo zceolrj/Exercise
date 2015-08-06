@@ -1,0 +1,49 @@
+@CHARSET "UTF-8";
+
+body,button, input, select, textarea,h1 ,h2, h3, h4, h5, h6 { 
+	font-family: Microsoft YaHei,'宋体' , Tahoma, Helvetica, Arial, "\5b8b\4f53", sans-serif;
+}
+
+#cxjgBody{
+	width:925px;
+	height:420px;
+	margin:0 auto;
+	padding-top:10px;
+}
+
+#bs-example{
+	margin-right: 0;
+	margin-left: 0;
+	background-color:#fff;
+	border-color:#ddd;
+	border-width:1px;
+	border-radius:4px 4px 0 0;
+	box-shadow:none;
+	padding: 15px 15px 15px;
+	margin:0 -15px 15px;
+	border-style:solid;
+}
+
+.title{
+	padding-bottom:10px;
+}
+
+.leftTD{
+	width:30%;
+	text-align:center;
+	background-color:#f7f7f9;
+}
+
+.rightTD{
+	width:70%;
+}
+
+.rightContent{
+	padding-left:25px;
+}
+
+.quarterTD{
+	width:25%;
+	text-align:center;
+	background-color:#f7f7f9;
+}

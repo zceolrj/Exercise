@@ -1,0 +1,81 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2014-7-21 0:36:58 by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="nju.software.xfgl.model.XfglLfdj" table="xfgl_lfdj" catalog="spgk">
+        <id name="bh" type="int">
+            <column name="BH" />
+            <generator class="assigned" />
+        </id>
+        <property name="djr" type="string">
+            <column name="DJR" length="20" />
+        </property>
+        <property name="djrq" type="timestamp">
+            <column name="DJRQ" length="19" />
+        </property>
+        <property name="zylfzxm" type="string">
+            <column name="ZYLFZXM" length="30" />
+        </property>
+        <property name="sfzhm" type="string">
+            <column name="SFZHM" length="20" />
+        </property>
+        <property name="xb" type="string">
+            <column name="XB" length="4" />
+        </property>
+        <property name="nl" type="java.lang.Integer">
+            <column name="NL" />
+        </property>
+        <property name="dh" type="string">
+            <column name="DH" length="15" />
+        </property>
+        <property name="zz" type="string">
+            <column name="ZZ" length="50" />
+        </property>
+        <property name="xzz" type="string">
+            <column name="XZZ" length="50" />
+        </property>
+        <property name="gzdw" type="string">
+            <column name="GZDW" length="50" />
+        </property>
+        <property name="dsrxm" type="string">
+            <column name="DSRXM" length="40" />
+        </property>
+        <property name="ydsrgx" type="string">
+            <column name="YDSRGX" length="10" />
+        </property>
+        <property name="lfcxbh" type="string">
+            <column name="LFCXBH" length="50" not-null="true" />
+        </property>
+        <property name="jgcxmm" type="string">
+            <column name="JGCXMM" length="50" not-null="true" />
+        </property>
+        <property name="yzbm" type="string">
+            <column name="YZBM" length="50" not-null="true" />
+        </property>
+        <property name="mobilephone" type="string">
+            <column name="MOBILEPHONE" length="50" not-null="true" />
+        </property>
+        <property name="dzyj" type="string">
+            <column name="DZYJ" length="50" not-null="true" />
+        </property>
+        <property name="xfrsf" type="string">
+            <column name="XFRSF" length="50" not-null="true" />
+        </property>
+        <property name="fyqk" type="string">
+            <column name="FYQK" length="65535" not-null="true" />
+        </property>
+        <property name="qtnr" type="string">
+            <column name="QTNR" length="65535" />
+        </property>
+        <property name="attachment" type="string">
+            <column name="ATTACHMENT" length="200" />
+        </property>
+        <property name="fkfs" type="string">
+            <column name="FKFS" length="50" />
+        </property>
+        <property name="symbol" type="int">
+            <column name="SYMBOL" not-null="true" />
+        </property>
+    </class>
+</hibernate-mapping>

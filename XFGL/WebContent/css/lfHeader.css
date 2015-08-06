@@ -1,0 +1,19 @@
+@CHARSET "UTF-8";
+
+body,button, input, select, textarea,h1 ,h2, h3, h4, h5, h6 { 
+	font-family: Microsoft YaHei,'宋体' , Tahoma, Helvetica, Arial, "\5b8b\4f53", sans-serif;
+}
+
+#header{
+	width:954px;
+	height:140px;
+	margin:0 auto;
+	overflow:hidden;
+}
+
+/* bar */
+#bar{
+	width: 954px;
+	height: 20px;
+	float: right;
+}

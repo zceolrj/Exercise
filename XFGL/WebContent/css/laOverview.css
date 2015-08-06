@@ -1,0 +1,43 @@
+@CHARSET "UTF-8";
+
+#laOverview{
+	height:400px;
+}
+
+#laOverviewBody{
+	padding-left:10px;
+	height:400px;
+}
+
+#overviewContent{
+	height:400px;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	
+	padding: 30px;
+    margin-bottom: 30px;
+    font-size: 21px;
+    font-weight: 200;
+    line-height: 2.1428571435;
+    color: inherit;
+    background-color: #eeeeee;
+  
+    padding-top: 1px;
+    padding-bottom: 18px;
+}
+
+#laOverviewContent{
+	height:200px;
+}
+
+#laOverviewButton{
+	text-align:center;
+	padding-top:20px;
+	padding-bottom:2px;
+}
+
+#laConfirm{
+	color: #ffffff;
+	background-color: #FF9900;
+	border-color: #FF9900;
+}
