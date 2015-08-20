@@ -1,0 +1,16 @@
+<html ng-app='myApp'>
+<body ng-controller='TextController'>
+	<p>{{someText.message}}</p>
+
+	<script src="http://www.w3cschool.cc/try/angularjs/1.2.5/angular.min.js"></script>
+	<script type="text/javascript">
+		var myAppModule = angular.module('myApp', []);
+
+		myAppModule.controller('TextController', function($scope){
+			var someText = {};
+			someText.message = 'Your have started your journey.';
+			$scope.someText = someText;
+		});
+	</script>
+</body>
+</html>

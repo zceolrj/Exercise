@@ -1,0 +1,35 @@
+<html ng-app='myApp'>
+
+<head>
+
+
+</head>
+
+<body ng-controller='TextController'>
+	<script src="http://apps.bdimg.com/libs/angular.js/1.3.9/angular.min.js"></script>
+
+	<p>{{someText.message}}</p>
+
+	<form name="myForm">
+  		Value1: <input type="checkbox" ng-model="value1"> <br/>
+  		Value2: <input type="checkbox" ng-model="value2"
+                 ng-true-value="'YES'" ng-false-value="'NO'"> <br/>
+  		<tt>value1 = {{value1}}</tt><br/>
+  		<tt>value2 = {{value2}}</tt><br/>
+ 	</form>
+
+
+	<script type="text/javascript">
+		var myAppModule = angular.module('myApp', []);
+
+		myAppModule.controller('TextController', function($scope){
+			var someText = {};
+			someText.message = 'Your have started your journey.';
+			$scope.someText = someText;
+
+			$scope.value1 = true;
+      		$scope.value2 = 'YES'
+		});
+	</script>
+</body>
+</html>
